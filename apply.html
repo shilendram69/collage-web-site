@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future University Bareilly - Application Form</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #c01111;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Header Styles */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #1a5276;
+            padding-bottom: 20px;
+        }
+        
+        .university-logo {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            color: #1a5276;
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        
+        /* Form Styles */
+        .form-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .section-title {
+            color: #1a5276;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .radio-group, .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .radio-group label, .checkbox-group label {
+            margin-left: 8px;
+            font-weight: normal;
+            display: inline;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .form-col {
+            flex: 1;
+        }
+        
+        /* Button Styles */
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            background-color: #0d93e7;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #154360;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+        
+        /* Form Validation Styles */
+        .required:after {
+            content: " *";
+            color: red;
+        }
+        
+        input:required, select:required, textarea:required {
+            border-left: 3px solid #1a5276;
+        }
+        
+        /* Photo Upload Styles */
+        .photo-upload {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .photo-preview {
+            width: 120px;
+            height: 150px;
+            border: 1px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            color: #666;
+        }
+        
+        .upload-btn {
+            background-color: #e0e0e0;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="C:\Users\DELL\Desktop\my collage\images\logo.jpg" alt="Future University Bareilly Logo" class="university-logo">
+            <h1>Future University Bareilly</h1>
+            <p class="subtitle">Application Form for Admission 2023-24</p>
+        </div>
+        
+        <form id="applicationForm">
+            <!-- Personal Information Section -->
+            <div class="form-section">
+                <h2 class="section-title">Personal Information</h2>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="firstName" class="required">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="lastName" class="required">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="fatherName" class="required">Father's Name</label>
+                            <input type="text" id="fatherName" name="fatherName" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="motherName" class="required">Mother's Name</label>
+                            <input type="text" id="motherName" name="motherName" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="dob" class="required">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label class="required">Gender</label>
+                            <div class="radio-group">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="email" class="required">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="phone" class="required">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address" class="required">Permanent Address</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="city" class="required">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="state" class="required">State</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="pincode" class="required">Pincode</label>
+                            <input type="text" id="pincode" name="pincode" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="required">Upload Photo</label>
+                    <div class="photo-upload">
+                        <div class="photo-preview">Photo Preview</div>
+                        <div>
+                            <input type="file" id="photo" name="photo" accept="image/*" style="display: none;" required>
+                            <label for="photo" class="upload-btn">Choose Photo</label>
+                            <p style="font-size: 12px; color: #666; margin-top: 5px;">(Passport size, max 2MB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Academic Information Section -->
+            <div class="form-section">
+                <h2 class="section-title">Academic Information</h2>
+                
+                <div class="form-group">
+                    <label for="course" class="required">Course Applying For</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="btech">B.Tech (Computer Science)</option>
+                        <option value="btech-it">B.Tech (Information Technology)</option>
+                        <option value="btech-ee">B.Tech (Electrical Engineering)</option>
+                        <option value="btech-me">B.Tech (Mechanical Engineering)</option>
+                        <option value="bsc">B.Sc (Computer Science)</option>
+                        <option value="bca">BCA</option>
+                        <option value="mba">MBA</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="stream" class="required">Stream in 12th/Diploma</label>
+                    <select id="stream" name="stream" required>
+                        <option value="">-- Select Stream --</option>
+                        <option value="science">Science (PCM/PCB)</option>
+                        <option value="commerce">Commerce</option>
+                        <option value="arts">Arts</option>
+                        <option value="diploma">Diploma</option>
+                    </select>
+                </div>
+                
+                <h3 style="margin-bottom: 15px; color: #1a5276;">10th Details</h3>
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="tenthBoard" class="required">Board</label>
+                            <input type="text" id="tenthBoard" name="tenthBoard" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="tenthYear" class="required">Year of Passing</label>
+                            <input type="number" id="tenthYear" name="tenthYear" min="1990" max="2023" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="tenthPercentage" class="required">Percentage/CGPA</label>
+                            <input type="text" id="tenthPercentage" name="tenthPercentage" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-bottom: 15px; color: #1a5276;">12th/Diploma Details</h3>
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="twelfthBoard" class="required">Board/University</label>
+                            <input type="text" id="twelfthBoard" name="twelfthBoard" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="twelfthYear" class="required">Year of Passing</label>
+                            <input type="number" id="twelfthYear" name="twelfthYear" min="1990" max="2023" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="twelfthPercentage" class="required">Percentage/CGPA</label>
+                            <input type="text" id="twelfthPercentage" name="twelfthPercentage" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="entranceExam">Entrance Exam Appeared (if any)</label>
+                    <input type="text" id="entranceExam" name="entranceExam" placeholder="e.g., JEE, NEET, CUET, etc.">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="entranceRank">Rank/Score</label>
+                            <input type="text" id="entranceRank" name="entranceRank">
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="entranceRollNo">Roll Number</label>
+                            <input type="text" id="entranceRollNo" name="entranceRollNo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Documents Section -->
+            <div class="form-section">
+                <h2 class="section-title">Documents to be Uploaded</h2>
+                
+                <div class="form-group">
+                    <label class="required">Documents Checklist</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="doc1" name="documents" value="tenthMarksheet" required>
+                        <label for="doc1">10th Marksheet/Certificate</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="doc2" name="documents" value="twelfthMarksheet" required>
+                        <label for="doc2">12th Marksheet/Certificate</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="doc3" name="documents" value="transferCertificate">
+                        <label for="doc3">Transfer Certificate</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="doc4" name="documents" value="migrationCertificate">
+                        <label for="doc4">Migration Certificate (if applicable)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="doc5" name="documents" value="casteCertificate">
+                        <label for="doc5">Caste Certificate (if applicable)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="doc6" name="documents" value="incomeCertificate">
+                        <label for="doc6">Income Certificate (if applicable)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="doc7" name="documents" value="aadharCard">
+                        <label for="doc7">Aadhar Card</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information (if any)</label>
+                    <textarea id="additionalInfo" name="additionalInfo"></textarea>
+                </div>
+            </div>
+            
+            <!-- Declaration Section -->
+            <div class="form-section">
+                <h2 class="section-title">Declaration</h2>
+                
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="declaration" name="declaration" required>
+                        <label for="declaration" class="required">I hereby declare that all the information provided in this application form is true and correct to the best of my knowledge. I understand that any false information may lead to cancellation of my admission.</label>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="applicantName" class="required">Applicant's Name</label>
+                            <input type="text" id="applicantName" name="applicantName" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="applicantDate" class="required">Date</label>
+                            <input type="date" id="applicantDate" name="applicantDate" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn-container">
+                <button type="submit" class="btn">Submit Application</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        // Simple form validation and photo preview
+        document.getElementById('photo').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    document.querySelector('.photo-preview').innerHTML = `<img src="${event.target.result}" style="max-width:100%; max-height:100%;">`;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Application submitted successfully! We will contact you soon.');
+            // In a real application, you would send the form data to a server here
+        });
+    </script>
+</body>
+</html>
