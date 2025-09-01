@@ -1,0 +1,117 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .notice-board {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .notice-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .notice-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .notice-header {
+            padding: 1rem;
+            background: #2a5298;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .academic {
+            background: #3498db;
+        }
+        
+        .admin {
+            background: #e74c3c;
+        }
+        
+        .events {
+            background: #2ecc71;
+        }
+        
+        .placement {
+            background: #9b59b6;
+        }
+        
+        .notice-content {
+            padding: 1.2rem;
+        }
+        
+        .notice-content ul {
+            list-style-type: none;
+        }
+        
+        .notice-content li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .notice-content li:last-child {
+            border-bottom: none;
+        }
+        
+        .date {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 0.5rem;
+            display: block;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .notice-board {
+                grid-template-columns: 1fr;
+            }
+        }
+   
